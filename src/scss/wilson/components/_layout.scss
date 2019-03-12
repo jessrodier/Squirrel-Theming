@@ -1,0 +1,25 @@
+header {
+
+}
+
+footer {
+  background-image: url('./assets/gfx/footer-bg.svg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding: 1rem;
+  margin-top: 2.5rem;
+  p {
+    color: white;
+    font-size: 0.75rem;
+    margin: 0.25rem 0;
+  }
+  a {
+    color: $white !important;
+  }
+  .wilson-works {
+    width: 15rem;
+    margin-bottom: 1rem;
+  }
+}

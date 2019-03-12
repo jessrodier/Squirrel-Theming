@@ -1,0 +1,89 @@
+button,
+input[type="submit"] {
+  padding: .4rem 2rem;
+  min-width: 5rem;
+  font-size: 0.9rem;
+  box-shadow: .05rem .05rem 0.25rem $gray;
+  margin: 0.25rem;
+  background: $button-primary-bg;
+  color: $button-primary-font-color;
+  border: none;
+  position: relative;
+  transform: translateZ(0);
+  transition: color 1000ms;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #6FA3CD;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition: 300ms ease-out;
+  }
+  &:hover:before {
+    transform: scaleX(1);
+  }
+  &.lg {
+    padding: 0.5rem 1rem;
+    min-width: 10rem;
+    font-size: 1.25rem;
+  }
+  &.sm {
+    padding: .15rem .25rem;
+    min-width: 3rem;
+    font-size: 0.75rem;
+  }
+  &.primary {
+    background: $button-primary-bg;
+    color: $button-primary-font-color;
+    border: none;
+    &::before {
+      background: $button-primary-bg--hover;
+    }
+  }
+  &.secondary {
+    background: $button-secondary-bg;
+    color: $button-secondary-font-color;
+    border: none;
+    &::before {
+      background: $button-secondary-bg--hover;
+    }
+  }
+  &.success {
+    background: $button-success-bg;
+    color: $button-success-font-color;
+    border: none;
+    &::before {
+      background: $button-success-bg--hover;
+    }
+  }
+  &.warning {
+    background: $button-warning-bg;
+    color: $button-warning-font-color;
+    border: none;
+    &::before {
+      background: $button-warning-bg--hover;
+    }
+  }
+  &.unavailable {
+    background: $button-unavailable-bg;
+    color: $button-unavailable-font-color;
+    border: none;
+    &::before {
+      background: $button-unavailable-bg;
+    }
+  }
+  &.disabled {
+    background: $button-disabled-bg;
+    color: $button-disabled-font-color;
+    border: none;
+    &::before {
+      background: $button-disabled-bg;
+    }
+  }
+}

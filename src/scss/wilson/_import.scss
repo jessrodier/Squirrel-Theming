@@ -1,0 +1,13 @@
+// Here is where you import neccessary settings files first...
+// ***********************************************************
+@import
+  'vendor/reset',
+  'settings/variables',
+  'settings/colors',
+  'settings/typography',
+  'settings/mixins',
+  'settings/media-queries',
+  'vendor/bootstrap',
+  'vendor/flexbox';
+
+// See wilson.scss for the rest of the files...

@@ -1,0 +1,246 @@
+// *******************************
+// Declare all local fonts here...
+// *******************************
+// *******************************
+
+// Open Sans
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/open-sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/open-sans/OpenSans-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/open-sans/OpenSans-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/open-sans/OpenSans-SemiBoldItalic.ttf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/open-sans/OpenSans-Bold.ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/open-sans/OpenSans-BoldItalic.ttf');
+  font-weight: 800;
+  font-style: italic;
+}
+
+// Tw Cen MT Std
+@font-face {
+  font-family: 'Tw Cen MT Std';
+  src: url('/fonts/tw-cen-mt-std/TwCenMTstd.otf');
+}
+
+@font-face {
+  font-family: 'Tw Cen MT Std';
+  src: url('/fonts/tw-cen-mt-std/TwCenMTstd-Italic.otf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Tw Cen MT Std';
+  src: url('/fonts/tw-cen-mt-std/TwCenMTstd-Bold.otf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Tw Cen MT Std';
+  src: url('/fonts/tw-cen-mt-std/TwCenMTstd-ExtraBold.otf');
+  font-weight: 800;
+}
+
+// Font variables
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Tw Cen MT Std', sans-serif;
+
+// Font Weights
+$light: 200;
+$normal: 400;
+$semibold: 600;
+$bold: 800;
+$heavy: 900;
+
+body {
+  font-size: 62.5%;
+  font-family:  $primary-font;
+  line-height: 1.5;
+  color: $font-color;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: .75rem 0;
+}
+
+h1 {
+  font-family: $primary-font;
+  font-weight: $semibold;
+  font-size: 2.5rem;
+  color: $font-color--accent;
+}
+
+h2 {
+  font-family: $primary-font;
+  font-weight: $bold;
+  font-size: 2rem;
+  color: $font-color;
+}
+
+h3 {
+  font-family: $primary-font;
+  font-weight: $semibold;
+  font-size: 1.75rem;
+  color: $font-color;
+}
+
+h4 { 
+  font-family: $primary-font;
+  font-weight: $bold;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: $sm-letter-spacing;
+  color: $font-color--accent;
+  margin: 1rem 0 .5rem 0;
+}
+
+h5 {
+  font-family: $primary-font;
+  font-weight: $bold;
+  font-size: 1.25rem;
+  color: $font-color;
+}
+
+h6 { 
+  font-family: $primary-font;
+  font-size: 1.25rem;
+  text-decoration: underline;
+  color: $font-color;
+}
+
+p {
+  font-family: $primary-font;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $font-color;
+}
+
+b,
+strong {
+  font-weight: $bold;
+}
+
+a {
+  color: $anchor;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+    color: $anchor--hover;
+  }
+  &:visited {
+    color: $anchor--visited;
+  }
+  &:active {
+    color: $anchor--active;
+  }
+  &.disabled {
+    color: $anchor--disabled;
+  }
+}
+
+.intro-text {
+  font-family: $primary-font;
+  font-weight: $bold;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: $sm-letter-spacing;
+  color: $font-color--accent;
+}
+
+.post-info,
+.page-info {
+  font-family: $primary-font;
+  font-size: .75rem;
+  color: $font-color--light;
+}
+
+// Special Cases
+h1 {
+  &.special {
+    font-family: $secondary-font;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.2rem;
+    color: $black;
+    margin: 0.25rem 0;
+  }
+}
+
+h2 {
+  &.special {
+    font-family: $secondary-font;
+    font-size: 1.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.15rem;
+    color: $black;
+    margin: 0.25rem 0;
+  }
+}
+
+h3 {
+  &.special {
+    font-family: $secondary-font;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.15rem;
+    color: $black;
+    margin: 0.25rem 0;
+  }
+}
+
+h4 {
+  &.special {
+    font-family: $secondary-font;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0;
+    text-transform: lowercase;
+    color: $black;
+  }
+}
+
+h5 {
+  &.special {
+    font-family: $secondary-font;
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.1rem;
+    color: $black;
+    margin: 0.25rem 0;
+  }
+}
+
+p {
+  &.special {
+    font-family: $secondary-font;
+    font-size: 1.25rem;
+  }
+}

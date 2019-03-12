@@ -1,0 +1,216 @@
+// **********************
+// GENERAL COLOR PALLETTE
+// **********************
+
+// B&W Shades
+$black: #000000;
+$almost-black: #363636;
+$gray--darker: #5e5e5e;
+$gray--dark: #878787;
+$gray: #c1c1c1;
+$gray--light: #e5e5e5;
+$almost-white: #fbfbfb;
+$white: #ffffff;
+// Basic Colors
+$red: #cc4d4d;
+$red--dark: #9b4242;
+$gold: #e8b335;
+$green: #25b15d;
+$purple: #5a3480;
+// Wilson Blues
+$blue--darker: #001E52;
+$blue--dark: #002E7C;
+$blue: #003DA5;
+$wilson-blue: #003DA5;
+$blue--light: #406DBB;
+$blue--lighter: #7F9DD2;
+$blue--lightest: #BFCEE8;
+
+$blue2--darker: #1F415D;
+$blue2--dark: #2F638D;
+$blue2: #3E84BC;
+$blue2--light: #6FA3CD;
+$blue2--lighter: #9FC1DD;
+$blue2--lightest: #CFE0EE;
+
+
+// *********************
+//        BUTTONS
+// *********************
+
+// Primary
+$button-primary-bg: $blue2;
+$button-primary-bg--hover: $blue2--light;
+$button-primary-font-color: $white;
+// Secondary
+$button-secondary-bg: $blue2--light;
+$button-secondary-bg--hover: $blue2; 
+$button-secondary-font-color: $white;
+// Success
+$button-success-bg: $green;
+$button-success-bg--hover: lighten($button-success-bg, 10%);
+$button-success-font-color: $white;
+// Disabled
+$button-disabled-bg: $gray--light;
+$button-disabled-font-color: $gray--dark;
+// Warning
+$button-warning-bg: $red;
+$button-warning-bg--hover: darken($button-warning-bg, 10%);
+$button-warning-border: 0.05rem solid $red--dark;
+$button-warning-font-color: $white;
+// Unavailable
+$button-unavailable-bg: $gray--dark;
+$button-unavailable-border: 0.05rem solid $gray--dark;
+$button-unavailable-font-color: $almost-white;
+
+
+// *********************
+//     PAGE LAYOUT
+// *********************
+
+// Header: Light Theme
+$header-bg--light: $white;
+$header-font-color--light: $almost-black;
+// Header: Dark Theme
+$header-bg--dark: $blue--darker;
+$header-font-color--dark: $white;
+// Footer: Light Theme
+$footer-bg--light: $white;
+$footer-font-color--light: $almost-black;
+// Footer: Dark Theme
+$footer-bg--dark: $blue--darker;
+$footer-font-color--dark: $white;
+// Page Background Color Options
+$body-bg: $white; // default
+$body-bg--tinted: $almost-white; // if main content will be over white; use for contrast
+$main-content-bg: $white; // use only with $body-bg--tinted
+
+
+// *********************
+//     FONT COLORS
+// *********************
+
+// Base Font
+$font-color: $almost-black;
+$font-color--light: $gray--dark;
+$font-color--accent: $wilson-blue;
+// Anchor Tags
+$anchor: $wilson-blue;
+$anchor--hover: darken($anchor, 10%);
+$anchor--visited: $purple;
+$anchor--active: $green;
+$anchor--disabled: $gray--dark;
+
+
+// *********************
+//    PROGRAM COLORS
+// *********************
+// Each program has 6 colors...
+//   1. a "--darker" which should be used for page elements (e.g. icons) and dark text
+//   2. a "--dark" which should be used for accents
+//   3. a main/default color
+//   4. a "--light"
+//   5. a "--lighter"
+//   6. a "--lightest" which whould be used for light text on a dark background instead of white or almost-white.
+//
+// When defining page-specific colors, use #1 as $theme-font--dark, #2 as $theme--primary, $3 as $theme--secondary,
+// #4 as $theme--tertiary, and #5 as $theme-font--light.
+
+// Fundations
+$fun--darker: #785E24;
+$fun--dark: #B58F36;
+$fun: #F1BE48;
+$fun--light: #F4CE75;
+$fun--lighter: #F7DEA2;
+$fun--lightest: #FBEED0;
+// Fundations Prevention (Same colors as Fundations, but these variables should be used when relating to the LC)
+$prevention--darker: #785E24;
+$prevention--dark: #B58F36;
+$prevention: #F1BE48;
+$prevention--light: #F4CE75;
+$prevention--lighter: #F7DEA2;
+$prevention--lightest: #FBEED0;
+// Fundations Early Intervention
+$early-intervention--darker: #5E6B2D;
+$early-intervention--dark: #8EA244;
+$early-intervention: #BDD85A;
+$early-intervention--light: #CDE183;
+$early-intervention--lighter: #DDEBAB;
+$early-intervention--lightest: #EEF5D5;
+// Fundations Pre-K
+$pre-k--darker: #466B7B;
+$pre-k--dark: #6BA2BA;
+$pre-k: #8ED8F8;
+$pre-k--light: #AAE2FA;
+$pre-k--lighter: #C6EBFB;
+$pre-k--lightest: #E3F5FD;
+// Fundations Level K
+$funk--darker: #004D6E;
+$funk--dark: #0075A7;
+$funk: #009CDE;
+$funk--light: #3FB4E6;
+$funk--lighter: #7ECDEE;
+$funk--lightest: #BEE5F6;
+// Fundations Level 1
+$fun1--darker: #73483E;
+$fun1--dark: #AE6E5D;
+$fun1: #E8927C;
+$fun1--light: #EDAD9C;
+$fun1--lighter: #F3C8BC;
+$fun1--lightest: #F9E3DD;
+// Fundations Level 2
+$fun2--darker: #2E5B58;
+$fun2--dark: #458A86;
+$fun2: #5CB8B2;
+$fun2--light: #84C9C5;
+$fun2--lighter: #ACDBD8;
+$fun2--lightest: #D5ECEB;
+// Fundations Level 3
+$fun3--darker: #480052;
+$fun3--dark: #6C007C;
+$fun3: #9000A5;
+$fun3--light: #AC40BC;
+$fun3--lighter: #C880D2;
+$fun3--lightest: #E3BFE8;
+// Just Words
+$jw--darker: #2D0054;
+$jw--dark: #43007E;
+$jw: #5A00A8;
+$jw--light: #8340BE;
+$jw--lighter: #AD80D4;
+$jw--lightest: #D6BFE9;
+// Just Words Intervention (Same colors as Just Words, but these variables should be used when relating to the LC)
+$intervention--darker: #2D0054;
+$intervention--dark: #43007E;
+$intervention: #5A00A8;
+$intervention--light: #8340BE;
+$intervention--lighter: #AD80D4;
+$intervention--lightest: #D6BFE9;
+// WRS
+$wrs--darker: #00235D;
+$wrs--dark: #00358C;
+$wrs: #0047BB;
+$wrs--light: #3F75CC;
+$wrs--lighter: #7EA2DC;
+$wrs--lightest: #BED0ED;
+// WRS Intensive (Same colors as WRS, but these variables should be used when relating to the LC)
+$intensive--darker: #00235D;
+$intensive--dark: #00358C;
+$intensive: #0047BB;
+$intensive--light: #3F75CC;
+$intensive--lighter: #7EA2DC;
+$intensive--lightest: #BED0ED;
+// Wilson Professional Community (WPC)
+$wpc--darker: #6D3A18;
+$wpc--dark: #A45824;
+$wpc: #DB7530;
+$wpc--light: #E49763;
+$wpc--lighter: #ECB996;
+$wpc--lightest: #F5DBCA;
+// Administrator Community
+$alc--darker: #651B1B;
+$alc--dark: #982929;
+$alc: #CB3636;
+$alc--light: #D86868;
+$alc--lighter: #E49999;
+$alc--lightest: #F1CBCB;

@@ -1,0 +1,105 @@
+@import '../wilson/import';
+
+// Fonts
+h1 {
+  &.project {
+    font-size: 2rem;
+    margin: 0.5rem 0 0.25rem 0;
+  }
+}
+
+h2 {
+  &.project {
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.1rem;
+    color: white;
+    background: $blue--darker;
+    padding: 0.25rem 0.5rem;
+    margin: 1.5rem 0;
+  }
+}
+
+h3 {
+  &.project {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}
+
+h4 {
+  &.project {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin: 1rem 0 0.5rem 0;
+    text-transform: uppercase;
+    color: $blue--darker;
+  }
+}
+
+
+// Navigation 
+.left-nav {
+  width: 30rem;
+  height: 1vh;
+  padding: 1rem 1rem 1rem 0;
+  ul {
+    position: fixed;
+    list-style-type: none;
+    padding: 0 1rem 1rem;
+    background: white;
+    a {
+      text-decoration: none;
+      &:hover {
+        font-weight: 600;
+      }
+      &:visited {
+        color: #255aa8;
+      }
+    }
+  }
+  .title {
+    font-size: 1.25rem;
+    // text-decoration: underline;
+    font-weight: 600;
+  }
+  .parent {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .child {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+
+// Basic Page Elements
+.wrapper {
+  display: block;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+.main-content,
+.left-nav {
+  margin-top: 2rem;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.display-container {
+  padding: 0 1rem;
+}

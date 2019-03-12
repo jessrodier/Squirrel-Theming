@@ -1,0 +1,23 @@
+hr {
+  &.lg {
+    margin: 1rem 0;
+  }
+}
+
+.close-button {
+  width: 1.5rem;
+  height: 2rem;
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .close-x {
+    stroke: $blue--dark;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-width: 3;
+    &.light {
+      stroke: $white;
+    }
+  }
+}
